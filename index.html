@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101a20"><meta name="description" content="A batch traceability workbench for independent food makers.">
+<title>Batchline — Every batch has a story</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script><script src="app.js" defer></script>
+</head>
+<body><div class="grain" aria-hidden="true"></div>
+<header class="topbar"><a class="brand" href="#home"><span class="brand-mark"><i></i><i></i><i></i></span><span>batchline<small>MICRO-PRODUCER WORKBENCH</small></span></a><div class="top-state"><i></i> LOCAL WORKSPACE <b>/</b> THANE, INDIA</div><div class="top-actions"><button id="global-search" class="icon-button" aria-label="Search">⌕</button><button id="menu-toggle" class="icon-button mobile-only" aria-label="Menu">☰</button><span class="edition">FIELD SYSTEM 01</span></div></header>
+<div class="shell"><aside id="sidebar" class="sidebar"><div class="nav-label">OPERATIONS</div><nav><a href="#home" data-route="home"><span>01</span>Overview</a><a href="#stock" data-route="stock"><span>02</span>Ingredient lots <b id="lot-count">00</b></a><a href="#batches" data-route="batches"><span>03</span>Production runs</a><a href="#trace" data-route="trace"><span>04</span>Trace & recall</a><a href="#dispatch" data-route="dispatch"><span>05</span>Dispatch ledger</a><a href="#quality" data-route="quality"><span>06</span>Quality log</a><a href="#suppliers" data-route="suppliers"><span>07</span>Suppliers</a><a href="#records" data-route="records"><span>08</span>Records & export</a></nav><div class="sidebar-bottom"><div class="batch-chip"><span class="pulse"></span><span><small>TRACEABILITY MODE</small><strong>LOCAL · DEVICE ONLY</strong></span></div><p>Built for short runs, small teams, and ingredient records that need to stay connected.</p><div class="side-version">BATCHLINE / THANE<br>DEMO DATA IS FICTIONAL</div></div></aside><main id="main"></main></div>
+<dialog id="search-dialog"><form method="dialog" class="search-form"><label for="search-input">FIND A LOT, BATCH OR SUPPLIER</label><div><input id="search-input" type="search" placeholder="Try LOT-2408 or jaggery…" autocomplete="off"><button value="cancel" aria-label="Close">×</button></div><section id="search-results"></section><small>Search stays in this browser.</small></form></dialog>
+<div id="toast-region" class="toast-region" aria-live="polite"></div>
+</body></html>
